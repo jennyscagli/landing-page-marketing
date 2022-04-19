@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Marketing Digital</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="70%"></a>
+            </div>
+            
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Preços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li class="lg"><a href="#">Login</a></li>
+            </ul>
+
+            <div class="menu-icon">
+                <img src="menu.png">
+            </div>
+
+        </nav>
+        <main>
+            <div class="main_text">
+                <h1><b>Aumente</b><strong> suas redes sociais com Marketing Digital!</strong></h1>
+                <p>
+                    Marketing Digital é o conjunto de estratégias voltadas para
+                    a promoção de uma marca no ambiente online, sempre com o objetivo
+                    de promover empresas e produtos. Com isso, as marcas podem
+                    fazer uso de diferentes canais digitais e métodos que permitem
+                    a análise dos resultados em tempo real.
+                </p>
+                <button>Junte-se a nós</button>
+            </div>
+            <div class="main_img">
+                <img src="nave.png">
+            </div>
+        </main>
+    </div>
+
+    <script>
+        var menu = document.querySelector('nav ul');
+        var menuicon = document.querySelector('nav .menu-icon');
+        var menuiconimg = document.querySelector('nav .menu-icon img');
+
+        menuicon.addEventListener('click',()=>{
+            menu.classList.toggle('activo');
+            if (menuiconimg.getAttribute("src") == 'menu.png'){
+            }
+        })
+    </script>
+</body>
+</html>
